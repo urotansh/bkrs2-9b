@@ -20,6 +20,9 @@ class SearchesController < ApplicationController
   end
   
   def date_search
+    user = User.find(params[:user_id])
+    books = user.books
+    @book_count = books.created_target_date(params[:date]).count
   end
   
 end
