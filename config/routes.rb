@@ -17,5 +17,6 @@ Rails.application.routes.draw do
   end
   
   get "searches" => "searches#search"
+  get "date_searches" => "searches#date_search"
   
 end

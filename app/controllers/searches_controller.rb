@@ -17,6 +17,9 @@ class SearchesController < ApplicationController
     else
       @results = obj.none
     end
-    
   end
+  
+  def date_search
+  end
+  
 end

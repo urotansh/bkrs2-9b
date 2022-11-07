@@ -16,6 +16,13 @@
       <%= render 'books/index',books: @books %>
       
       <%# 指定日の投稿数検索 %>
+      <%= form_with url: date_searches_path, local: false, method: :get do |f| %>
+        <%= f.date_field :date %>
+        <%= f.submit '検索', class: "btn-primary" %>
+      <% end %>
+      
+      <div class="book_count_table">
+      </div>
 
     </div>
   </div>
