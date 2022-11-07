@@ -1,11 +1,3 @@
 $(".book_count_table").html(
-  "<h2>検索結果</h2>\
-  <table class='table table-bordered'>\
-    <tr>\
-      <th>投稿数</th>\
-    </tr>\
-    <tr>\
-      <td><%= @book_count %></td>\
-    </tr>\
-  </table>\
-")
+  "<%= j(render 'searches/date_search', book_count: @book_count) %>"
+);
